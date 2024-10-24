@@ -1,0 +1,230 @@
+
+header h1 {
+    font-size: 28px;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    font-size: 1.2em; 
+    color: black;
+}
+
+.main-menu ul li a:hover {
+    color: red;
+}
+
+main {
+    padding: 20px;
+}
+
+.products h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.main-soupes, .main-dishes, .main-drinks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.product {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 35px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.product:hover{
+    border: 2px solid tomato;
+}
+
+.product:hover button{
+    background-color: tomato;
+}
+
+.product:hover .product-info .price, .product:hover .product-info .name {
+    font-size: 1.4em;
+}
+
+.product:hover .product-info .weight {
+    color: grey;
+}
+
+.product-img img {
+    width: 100%;
+    max-width: 400px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 35px;
+    margin: 0 auto;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info .price, .product-info .name {
+    font-size: 18px;
+    color: black;
+}
+
+.product-info .weight {
+    font-size: 14px;
+}
+
+
+.controls button {
+    background-color: #f1eee9;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.main-menu a.active {
+    color: tomato;
+}
+
+#order-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+#order-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.order-section, .customer-section {
+    flex: 1;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+small {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+.form-buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-reset, .btn-submit {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.btn-reset:hover {
+    background-color: gray;
+}
+
+.btn-submit:hover {
+    background-color: #333;
+}
+
+
+
+@media (max-width: 800px) {
+    .main-soupes, .main-dishes, .main-drinks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    section h2 {
+        text-align: center;
+    }
+    .main-soupes, .main-dishes, .main-drinks {
+        grid-template-columns: 1fr;
+    }
+}

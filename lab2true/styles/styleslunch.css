@@ -1,0 +1,138 @@
+
+header h1 {
+    font-size: 28px;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    font-size: 1.2em; 
+    color: black;
+}
+
+.main-menu ul li a:hover {
+    color: red;
+}
+
+main {
+    padding: 20px;
+}
+
+.products h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.main-soupes, .main-dishes, .main-drinks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.product {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 35px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.product:hover {
+    border: 2px solid tomato;
+}
+
+.product-img img {
+    width: 100%;
+    max-width: 400px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 35px;
+    margin: 0 auto;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info .price, .product-info .name {
+    font-size: 18px;
+    color: black;
+}
+
+.product-info .weight {
+    font-size: 14px;
+    color: gray;
+}
+
+
+.controls button {
+    background-color: #f1eee9;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.controls button:hover {
+    background-color: tomato;
+}
+
+footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.main-menu a.active {
+    color: tomato;
+}
+
+
+@media (max-width: 800px) {
+    .main-soupes, .main-dishes, .main-drinks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    section h2 {
+        text-align: center;
+    }
+    .main-soupes, .main-dishes, .main-drinks {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main, header {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body {
+    margin: 0px;
+}
+header {
+    color: black;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    border-collapse: collapse;
+    color: black;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.main-menu ul{
+    padding: 0;
+}
+
+.main-menu li{
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.advantages, .top-dishes {
+    max-width: 600px;
+}
+
+.col3 {
+    width: 100px;
+}
+
+.col4 {
+    width: 70px;
+}
+
+.advantages ul {
+    padding: 0;
+}
+
+.advantages li {
+    font-size: 1.2em;
+}
+
+img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+a.active {
+    color: tomato;
+}
+
+@media (max-width: 800px) {
+    img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        font-size: 20px;
+        padding: 4px;
+    }
+    img {
+        width: 100%; 
+    }
+    table {
+        font-size: 14px; 
+    }
+}
+
+
+@media (max-width: 400px) {
+    table {
+        font-size: 12px; 
+    }
+}

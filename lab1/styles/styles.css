@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main, header {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body {
+    margin: 0px;
+}
+header {
+    color: black;
+    padding: 20px 0;
+}
+
+nav a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    font-family: 1.2em;
+    font-size: 1.2em;
+    border-collapse: collapse;
+    color: black;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.main-menu ul{
+    padding: 0;
+}
+
+.main-menu li{
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.advantages, .top-dishes {
+    max-width: 600px;
+}
+
+.col3 {
+    width: 100px;
+}
+
+.col4 {
+    width: 70px;
+}
+
+.advantages ul {
+    padding: 0;
+}
+
+.advantages li {
+    font-size: 1.2em;
+}
+
+img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.contact {
+    color: white;
+}
