@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     dish.style.display = 'none';
                 }
             });
-            // Показываем только те блюда, которые соответствуют data-kind кнопки, все остальные скрываем.
+            // Показываем только те блюда, которые соответствуют атрибуту data-kind кнопки, все остальные скрываем.
 
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
