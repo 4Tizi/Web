@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Доставка блюд из ресторанов в Москве</title>
+    <link rel="shortcut icon" type="image/jpg" href="/food.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles_main.css">
+    <link rel="stylesheet" href="styles_make_lunch.css">
+    <script src="make_lunch.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <h1>FFD - Food Fast Delivery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">О нас</a></li>
+                <li><a class="active" href="make_lunch.html">Собрать ланч</a></li>
+                <li><a href="get_order.html">Заказать блюдо</a></li>
+                <li><a href="orders.html">Заказы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="name-combo">Доступные для заказа комбо</h2>
+        <div class="combo-grid">
+            <div class="combo-flex">
+                <div class="combo">
+                    <img src="soup.png" alt="Суп">
+                    <div class="dish-name">Суп</div>
+                </div>
+                <div class="combo">
+                    <img src="main.png" alt="Главное блюдо">
+                    <div class="dish-name">Главное блюдо</div>
+                </div>
+                <div class="combo">
+                    <img src="salad.png" alt="Салат">
+                    <div class="dish-name">Салат</div>
+                </div>
+                <div class="combo">
+                    <img src="juice.png" alt="Напиток">
+                    <div class="dish-name">Напиток</div>
+                </div>
+            </div>
+            <div class="combo-flex">
+                <div class="combo">
+                    <img src="soup.png" alt="Суп">
+                    <div class="dish-name">Суп</div>
+                </div>
+                <div class="combo">
+                    <img src="main.png" alt="Главное блюдо">
+                    <div class="dish-name">Главное блюдо</div>
+                </div>
+                <div class="combo">
+                    <img src="juice.png" alt="Напиток">
+                    <div class="dish-name">Напиток</div>
+                </div>
+            </div>
+            <div class="combo-flex">
+                <div class="combo">
+                    <img src="soup.png" alt="Суп">
+                    <div class="dish-name">Суп</div>
+                </div>
+                <div class="combo">
+                    <img src="salad.png" alt="Салат">
+                    <div class="dish-name">Салат</div>
+                </div>
+                <div class="combo">
+                    <img src="juice.png" alt="Напиток">
+                    <div class="dish-name">Напиток</div>
+                </div>
+            </div>
+            <div class="combo-flex">
+                <div class="combo">
+                    <img src="main.png" alt="Главное блюдо">
+                    <div class="dish-name">Главное блюдо</div>
+                </div>
+                <div class="combo">
+                    <img src="salad.png" alt="Салат">
+                    <div class="dish-name">Салат</div>
+                </div>
+                <div class="combo">
+                    <img src="juice.png" alt="Напиток">
+                    <div class="dish-name">Напиток</div>
+                </div>
+            </div>
+            <div class="combo-flex">
+                <div class="combo">
+                    <img src="main.png" alt="Главное блюдо">
+                    <div class="dish-name">Главное блюдо</div>
+                </div>
+                <div class="combo">
+                    <img src="juice.png" alt="Напиток">
+                    <div class="dish-name">Напиток</div>
+                </div>
+            </div>
+            <div class="combo-flex">
+                <div class="combo">
+                    <img src="dessert.png" alt="Десерт">
+                    <div class="dish-name">Десерт</div>
+                    <div class="dessert-info">(Можно добавить к любому заказу)</div>
+                </div>
+            </div>
+        </div>
+        <section class="section" id="soup">
+            <h2>Выберите суп</h2>
+            <div class="filters">
+                <a href="#" class="soup-filter" data-kind="fish">рыбное</a>
+                <a href="#" class="soup-filter" data-kind="meat">мясное</a>
+                <a href="#" class="soup-filter" data-kind="veg">вегетарианское</a>
+            </div>
+            <div class="grid"></div>
+        </section>
+
+        <section class="section" id="main">
+            <h2>Выберите главное блюдо</h2>
+            <div class="filters">
+                <a href="#" class="main-filter" data-kind="fish">рыбное</a>
+                <a href="#" class="main-filter" data-kind="meat">мясное</a>
+                <a href="#" class="main-filter" data-kind="veg">вегетарианское</a>
+            </div>
+            <div class="grid"></div>
+        </section>
+
+        <section class="section" id="salad">
+            <h2>Выберите салат или стартер</h2>
+            <div class="filters">
+                <a href="#" class="salad-filter" data-kind="fish">рыбное</a>
+                <a href="#" class="salad-filter" data-kind="meat">мясное</a>
+                <a href="#" class="salad-filter" data-kind="veg">вегетарианское</a>
+            </div>
+            <div class="grid"></div>
+        </section>
+
+        <section class="section" id="drink">
+            <h2>Выберите напиток</h2>
+            <div class="filters">
+                <a href="#" class="drink-filter" data-kind="cold">холодное</a>
+                <a href="#" class="drink-filter" data-kind="hot">горячее</a>
+            </div>
+            <div class="grid"></div>
+        </section>
+
+        <section class="section" id="dessert">
+            <h2>Выберите десерт</h2>
+            <div class="filters">
+                <a href="#" class="dessert-filter" data-kind="large">большая порция</a>
+                <a href="#" class="dessert-filter" data-kind="medium">средняя порция</a>
+                <a href="#" class="dessert-filter" data-kind="small">маленькая порция</a>
+            </div>
+            <div class="grid"></div>
+        </section>
+        <section class="get_order">
+            <p id="price">Стоимость заказа: 0₽</p>
+            <p class="order_link"><a class="link" href="get_order.html">Перейти к оформлению</a></p>
+        </section>
+    </main>
+    <footer id="contact">
+        <p>Позвоните нам +7-000-000-00-00</p>
+    </footer>
+</body>
+
+</html>
