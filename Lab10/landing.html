@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Доставка блюд из ресторанов в Москве</title>
+    <!-- Иконка страницы -->
+    <link rel="shortcut icon" type="image/jpg" href="/food.jpg">
+    <!-- Установка масштаба страницы для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Подключение пользовательских CSS-стилей -->
+    <link rel="stylesheet" href="styles_main.css">
+    <link rel="stylesheet" href="styles_make_lunch.css">
+    <link rel="stylesheet" href="landing.css">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+
+<header>
+    <h1>FFD - Food Fast Delivery</h1>
+</header>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <!-- Класс Bootstrap "display-4" добавляет крупный текст -->
+            <h1 class="display-4">Доставка бизнес-ланчей</h1>
+            <!-- Класс "lead" делает текст более заметным -->
+            <p class="lead">Аппетитно, быстро, удобно. Насладитесь нашими блюдами!</p>
+            <!-- Кнопка с использованием классов Bootstrap -->
+            <a href="#cta" class="btn btn-light btn-lg" id="more">Узнать больше</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <!-- Заголовок секции -->
+            <h2 class="mb-4">Наши преимущества</h2>
+            <!-- Сетка Bootstrap: строки и колонки -->
+            <div class="row">
+                <!-- Каждое преимущество занимает 4 колонки на средних экранах -->
+                <div class="col-md-4">
+                    <div class="features-icon mb-3">🌟</div>
+                    <h5>Идеальное качество</h5>
+                    <p>Мы используем только натуральные и свежие ингредиенты</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="features-icon mb-3">🚀</div>
+                    <h5>Мгновенная доставка</h5>
+                    <p>Привезем заказ в течение 30 минут</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="features-icon mb-3">⏰</div>
+                    <h5>Гибкий график</h5>
+                    <p>Работаем с 07:00 до 23:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta">
+        <div class="container" id="cta_img">
+            <h2 class="mb-4">Начните наслаждаться вкусом прямо сейчас!</h2>
+            <p>Соберите свой идеальный ланч за пару кликов.</p>
+            <!-- Кнопка с использованием классов Bootstrap -->
+            <a href="make_lunch.html" id='button' class="btn btn-light btn-lg">Собрать ланч</a>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Свяжитесь с нами</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Форма для отправки сообщения -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <!-- Поле ввода имени -->
+                            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Ваш email</label>
+                            <!-- Поле ввода email -->
+                            <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <!-- Текстовое поле для сообщения -->
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Ваше сообщение"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <!-- Кнопка отправки формы -->
+                            <button type="submit" class="btn btn-primary submit-button">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Позвоните нам +7-000-000-00-00</p>
+    </footer>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
